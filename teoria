@@ -1,0 +1,185 @@
+ jre=java runtime environment, entorno de ejecucion y maquina virtual de java
+java es multiplaraforma que implica que un programa escrito se debe compilar
+
+pasar la fuente de codigo fuente a codigo maquina es un compilador
+
+modificador de acceso: public
+
+variable: espacio en la memoria del ordenador donde se amacenara un valor que podra cambiar durante la ejecucion del programa
+por que hay que utilizar variables por que al crear un programa surge la necesidad de guardar datos temporalmente
+
+constante espacio en memoria del ordenador donde se almacenara un valor que no podra cambiar durante la ejecucion
+
+instancia=darle un nombre a un objeto donde se almacenara un valor
+
+metodo estatico se exige colocar la clase a la que pertenece delante del metodo
+
+una matriz es una estructura de datos que contiene una coleccion de valores del mismo tipo
+
+POO
+trasladar la  naturaleza de los objetos de la vida real al codigo de programacion
+tienen propiedades y comportamientos
+
+ventajas=se dividen en partes,modulos o clases:modularizacion
+-muy reutilizable:herencia
+-si hay fallo en una linea el programa continua:excepciones
+-encapsulamiento,oculta el estado o datos de un objeto de forma que se modifique desde el mismo metodo
+
+clases, es un modelo donde se redaptan las caracteristicas comunes de un grupo de objetos
+objeto, ejemplar perteneciente a una clase o elementos
+
+constructor es donde se contruye el estado inicial de un objeto
+instanciar una clase es crear un objeto de un constructor
+
+static=unica varibale que compartan todos los objetos de una clase
+una variable static pertenece a la clase,no actuan sobre objetos,no acceden a campos instanciados a menos que sean static
+
+sobrecarga de constructures es para darle diferentes valores iniciales a un objeto
+
+herencia la clase subclase hereda de la clase padre
+polimorfismo, enlazado dinamico,principio de sustitucion
+
+abstraccion :clases,metodos: abstraer caracteristicas y funciones que se desempeñan
+sobreescribir metodos 
+abstraccion metodo que debe tener todas las clases que hereden de ella pero que sera diferente para cada una
+cada vez que sube en la herencia es menos especializada
+a ser abstr no tiene nada en su interior al principio pero las clases que heredan si 
+
+protected es mas permisivo que private
+
+las interfaces conjunto de directrices que deben cumplir las clases
+no se pueden instanciar no tienen variables. si constantes
+solo contienen metodos asbtractos
+
+eventos desencadenantes der la accion, fuetes y oyentes
+
+layouts, disposiciones
+
+excepciones, manejo de errores
+en tiempo de compilacion= de sintaxis no llega a ejecutar 
+en tiempo de ejecucion= errores de logica,throwable, clausula throws
+-  error, ha ocurrido un error de hardware o poca capacidad del dd o poca memoria disponible
+-  clase exception,*
+*ioexception=excepciones comprobadas, no son culpa del programador ej:al buscar una imagen no la encuentra por que otra movio esa imagen, leer ficheros externos
+*runtimeexception=excepciones no comprobadas, son errores por parte del programador eje: recorrer un bucle hasta una posicion mas grade que la asignada
+
+secuencias streams acceder a un fichero externo 
+buffers especie de memoria interna- memoria intermedia entre el archivo y un programa java, es mas rapido para leer y escribir informacion en un archivo externo}
+
+serializacion, consiste en convertir un objeto en una susecion de byte para poder guardarlo en una unidad de almacenamiento para luego recuperarlo
+o para transferirlos por la red
+
+programacion generica
+arraylist, crear listas dinamicas va creciendo a medida que se ingresan datos
+iterador mecanismo que permite acceder a elementos de una coleccion
+
+programacion generica=reutilizacion del codigo, mayor sencillez del codigo, comprobacion de errores en tiempo de compilacion
+se adapta al tipo de objeto que uno quiere que le devuelva
+
+flujo de ejecucion(hilo)threads, multitareas
+realiza varias tareas de forma simultanea
+
+colecciones, almacen de objetos dinamicos pude crecer o menguar a partir del programa
+cambian de tamaño dinamicamente
+se puede insertar y eliminar elementos
+interfaz list=acceso aleatorio, estan ordenadas,añade y elimina sin restriccion 
+bajo rendimiento en operaciones concretas
+
+sockets-aplicacion cliente servidor-puente virtual entre el cliente y el servidor
+por donde se va compartir la informacion
+
+
+java data base connectitivyperomite conectar gestores de bases de datos 
+permite manipulacion a bbdd
+1-establece conexion con la bbdd
+2-crear un objeto statement
+3-ejecutar la sentencia sql
+4-leeer el resultset objeto donde se almacena los datos que vamos a consultar
+
+consultas preparadas
+permiten pasar parametros a las sentencias sql
+previenen de ataques de inyeccion sql
+tienen un mejor rendimiento(son sentencias precompiladas y reutilizables)
+
+mvc= es un patron de arquitectura que separa la logica del programa(datos) de la interfaz
+de usuario(ventanas)y las comunicaciones(eventos)
+modularizacion del programa
+reutilizacion de codigo
+mayor facilidaden el desarollo
+mayor facilidad de manteniento
+
+
+transacciones garantizan en una bbdd las caracteristicas ACID
+Atomicidad- o todo o nada ejecuta
+Consistencia- integridad de los datos
+Aislamiento
+Durabilidad
+
+metadatos son datos que describen la bbdd o alguna de sus partes
+tres clases de metadatos
+relativos a la bbdd=gestor bbdd,version del gestor,dirver de la conexion,version de driver
+
+relativos a un conjunto de resultados=nombre de tablas campos, tipo de datos , propiedades de campo
+
+reltivos a parametros de sentencias preparadas
+
+
+JSP
+pagina de servidor java
+app web es un sitio web cuyas paginas son  generadas dinamicamente
+dependiendo de la accion del usuario se generara unas paginas u otra
+jsp
+codigo java que se ejecuta en un servidor
+lee las acciones del usuario casi siempre desde formularios html
+devuelve una pagina html que se genera de forma deinamica dependiendo de las acciones del usuario
+esta alojado en un servidor web
+cliente servidor bbdd
+tomcat servidor web
+
+un archivo jsp se trata de codigo java embutido dentro de codigo html
+
+sesion creadas para seguir y memorizar las acciones de un usuario en un sitio web
+se utilizan en sitios web como banca online, paginas de certificaciones y examenes y comercio vertual
+tiendas, carro de la compra
+
+cookies son archivos de texto que se almacena en el ordenador del usurio durante la navegacion
+sirven para personalizar un sitio web basandose en las preferencias del usuario
+
+jsp tags librerias de etiquetas con apariencia similar a xml utilizadas en paginasweb
+separa el ciodiugo java del codigo html
+minimiza el codigo en la pagina web
+codigo dinamico sea reutilizable, mantenimiento mas sencillos
+
+tipos 
+jsp customtags propias
+jstl,core,formato,xml,sql
+
+servlets programas java que se ejecutan en un servidor web
+recibe peticion del cliente navegador y realiza su tarea 
+
+mvc=patron de diseño a la hora de crear aplicaciones de servidor java
+patron de diseño=separa la parte logica de la parte visual en nuestros proyectos
+integrando servlets y jsp
+los servlets se encargan de la parte logica y jsp de la parte visula
+
+controlador=servlets
+modelo=bbdd
+vista=jsp
+
+instroccpecion : observacion que hace una persona sobre su propia conciencia
+y sus estados de animos para reflexionar sobre ellos.
+
+en poo: capacidad de un programa de examinarse a si mismo viendo las capacidades de los objetos
+creados en tiempo de ejecucion, sus propiedades y metodos para poder modificarlos
+
+java bean
+vaina, frijol
+es un componente creado en java que puede ser reutilizado 
+y manipulado visualmente desde un enterno de desarrollo
+
+
+
+
+
+
+
