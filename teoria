@@ -55,7 +55,8 @@ solo contienen metodos asbtractos
 
 eventos desencadenantes der la accion, fuetes y oyentes
 
-layouts, disposiciones
+layouts, disposiciones ayudan a adaptar los diversos Componentes que se desean incorporar a un Panel, 
+es decir, especifican la apariencia que tendrán los Componentes a la hora de colocarlos sobre un Contenedor
 
 excepciones, manejo de errores
 en tiempo de compilacion= de sintaxis no llega a ejecutar 
