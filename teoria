@@ -13,6 +13,8 @@ constante espacio en memoria del ordenador donde se almacenara un valor que no p
 instancia=darle un nombre a un objeto donde se almacenara un valor
 
 metodo estatico se exige colocar la clase a la que pertenece delante del metodo
+static,permite el acceso a métodos, variables de clase sin la necesidad de instanciar un objeto de la clase en cuestión, 
+suele ser usado por ejemplo para la creación de clases de utilidad
 
 una matriz es una estructura de datos que contiene una coleccion de valores del mismo tipo
 
